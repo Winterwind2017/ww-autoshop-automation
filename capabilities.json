@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "generated_at": "2026-10-26T12:12:17",
+  "generated_at": "2026-10-26T12:25:30",
   "provenance": {
     "kernel": "autoshopkit",
     "kernel_repo": "https://github.com/Winterwind2017/autoshopkit",
-    "kernel_commit": "93aa245",
+    "kernel_commit": "edfa431",
     "engine": "AutoShop V4.11.0.5"
   },
   "cli_commands": [
@@ -178,7 +178,7 @@
     },
     {
       "id": "h5u.ladder_write",
-      "reason": "H5U 文档没有指令表编辑器（Scintilla 数为 0），写入通道只对 H3U 成立"
+      "reason": "H5U 程序存 .LD，语言只有 LD/LiteST；实测发 32883 不产生编辑器，写入通道只对 H3U 成立"
     },
     {
       "id": "h5u.ladder_click",

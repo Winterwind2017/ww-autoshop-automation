@@ -1,6 +1,6 @@
 # 能力清单（快照）
 
-由 `tools/sync_capabilities.py` 从内核生成；出处 `autoshopkit@93aa245`。
+由 `tools/sync_capabilities.py` 从内核生成；出处 `autoshopkit@edfa431`。
 
 ## 已打通（41）
 
@@ -52,6 +52,6 @@
 
 - `dl.to_plc` — 真正下载要连机与授权；只到『生成离线下载文件』
 - `monitor.live` — 在线监控读数需要真实 PLC
-- `h5u.ladder_write` — H5U 文档没有指令表编辑器（Scintilla 数为 0），写入通道只对 H3U 成立
+- `h5u.ladder_write` — H5U 程序存 .LD，语言只有 LD/LiteST；实测发 32883 不产生编辑器，写入通道只对 H3U 成立
 - `h5u.ladder_click` — 梯形图是自绘画布，UIA 无子元素，只能盲点
 - `monitor.grid_export` — 网格是 VSFlexGrid8N，没有剪贴板导出，只能逐格读

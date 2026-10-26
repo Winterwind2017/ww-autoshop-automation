@@ -149,6 +149,8 @@ Python 侧同名能力：`app.open_program` / `app.program_il` / `app.apply_prog
 
 ## 坑与配方
 
+- 编辑器矩阵（谁能有指令表、32883 在 H5U 上为什么无效）：
+  [内核 docs/EDITORS.md](https://github.com/Winterwind2017/autoshopkit/blob/main/docs/EDITORS.md)
 - 配方：[`references/recipes.md`](references/recipes.md)
 - 坑：[`references/pitfalls.md`](references/pitfalls.md)
 - 开工清单：[`references/checklists.md`](references/checklists.md)
@@ -158,3 +160,7 @@ Python 侧同名能力：`app.open_program` / `app.program_il` / `app.apply_prog
 见内核仓库 [`docs/UNSUPPORTED.md`](https://github.com/Winterwind2017/autoshopkit/blob/main/docs/UNSUPPORTED.md)：
 在线监控真值、真正的 PLC 下载、写 H5U 梯形图、点梯形图画布、网格整块导出 —— 这些都不会"成功"，
 只会给你一个假的 `True`。
+
+**"切到指令表"** 也是这一档：正确命令是 `32883`，但它只对"以 `.IL` 存程序"的机型（H3U）有效；
+在 H5U 上实测不产生编辑器、不产生新文档。H5U 想编辑文本只有 `结构化文本(LiteST)` 程序块一条路
+（未验证，别在客户工程上试）。
